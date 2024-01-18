@@ -18,7 +18,7 @@ Promise.all([
     utils.convertFontsOptions(
         actualizedFonts,
         ({ family, variant }) => {
-            return `/css?subset=latin-ext&family=${family.replace(/\s/g, '+')}:${variant}`;
+            return `/css?subset=latin-ext,korean&family=${family.replace(/\s/g, '+')}:${variant}`;
         }
     ),
     utils.convertFontsOptions(
